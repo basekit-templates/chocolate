@@ -129,9 +129,6 @@ blockquote:before {
 
 /* DEFAULT PAGE TYPE */
 
-.bk-pt-default header {
-  border-bottom: 1px solid darken(@color-swatch2,5%);
-}
 
 .bk-pt-default .extendednavigation ul li:hover > ul {
   border: 1px solid darken(@color-swatch2,5%);
@@ -449,7 +446,13 @@ footer h4 {
   text-decoration: none;
 }
 
-.nav-feature .widget.button button{
+
+.nav-feature .feature-button {
+  float: left;
+  width: 100%;
+}
+
+.nav-feature .feature-button .widget.button button {
   margin: 1.3em 0 1.8em;
   padding: 15px 25px;
   border: none;
