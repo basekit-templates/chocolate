@@ -12,7 +12,9 @@
     <div class="nav-feature">
         <div class="wrapper clearfix">
             {{widget('extendednavigation', 'navigationheader', {})|raw}}
+            <div class="feature-img-widget">
             {{widget('image', 'image', { 'src': asset('images/feature-img.jpg'), 'title': '', 'alt': '', 'fileName': 'feature-img.jpg', 'fileSize': '58kb', 'imageSize': '960 x 640', 'imageWidth': '100%'})|raw}}
+            </div>
             <div class="feature-button"> 
             {{widget('button', 'button', {italic: false, text:'button', 'align':'widget-align-center'})|raw}}
             </div>
