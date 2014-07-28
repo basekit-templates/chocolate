@@ -71,6 +71,10 @@ blockquote:before {
   padding: 20px 0;
 }
 
+.extendednavigation {
+  .clearfix;
+}
+
 /* DEFAULT PAGE TYPE */
 
 
@@ -1659,6 +1663,7 @@ footer .widget.profile span, footer .widget.profile a{
     display: none;
     margin: 0;
     border-top: 2px solid @color-swatch1;
+    padding-top:20px;
   }
 
   .widget.extendednavigation ul li {
@@ -1688,10 +1693,6 @@ footer .widget.profile span, footer .widget.profile a{
 
   .widget.extendednavigation ul li:hover, .widget.extendednavigation ul li.folder:hover {
        text-decoration: none;
-}
-
-  .widget.extendednavigation ul li.folder {
-    padding: 16px 0;
   }
 
   .widget .extendednavigation li {
@@ -1700,7 +1701,7 @@ footer .widget.profile span, footer .widget.profile a{
   }
 
   .widget.extendednavigation ul li a, .widget.extendednavigation ul li.folder .text {
-      padding: 5px;
+      padding: 8px 0px;
       margin: 0;
   }
 
@@ -1713,9 +1714,8 @@ footer .widget.profile span, footer .widget.profile a{
   .widget.extendednavigation ul li:hover > ul {
       display: block!important;
       width: 100%;
-      margin: 16px 0;
       padding: 0;
-      background-color: @font-swatch6-background-color;
+      background-color: lighten(@font-swatch6-background-color,80%);
   }
 
   .widget.extendednavigation ul li:hover > ul > li {
@@ -1729,12 +1729,10 @@ footer .widget.profile span, footer .widget.profile a{
   }
 
   .widget.extendednavigation ul li:hover > ul li:first-child {
-    padding-top: 16px;
     border-top: none;
   }
 
     .widget.extendednavigation ul li:hover > ul li:last-child {
-    padding-top: 16px;
   }
 
   .widget.extendednavigation li:hover > ul > li > a {
@@ -1837,11 +1835,16 @@ footer .widget.profile span, footer .widget.profile a{
     width: 100%;
   }
 
+  /*  nav  */
+
   .widget .extendednavigation a.pull {
     width: 55%;
   }
 
-
+    .widget.extendednavigation ul li {
+    border-bottom: 2px solid @color-swatch1;
+    padding:0;
+  }
 
 
   /* COMPANY NAME */
