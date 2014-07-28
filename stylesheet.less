@@ -33,55 +33,6 @@ h1, h2, h3, h4, h5, p {
   padding: 0 0 10px;
 }
 
-h1 {
-  font-family:@font-swatch1-font-family;
-  font-weight: @font-swatch1-font-weight;
-  color:@font-swatch1-color;
-  line-height:@font-swatch1-line-height;
-  letter-spacing: @font-swatch1-letter-spacing;
-  font-size: @font-swatch1-font-size;
-}
-
-h2
-{
-  font-family:@font-swatch2-font-family;
-  font-size: @font-swatch2-font-size;
-  font-weight: @font-swatch2-font-weight;
-  line-height:@font-swatch2-line-height;
-  color: @font-swatch2-color;
-  letter-spacing: @font-swatch2-letter-spacing;
-}
-
-h3
-{
-  font-family:@font-swatch3-font-family;
-  font-size:@font-swatch3-font-size;
-  font-weight: @font-swatch3-font-weight;
-  color: @font-swatch3-color;
-  line-height:@font-swatch3-line-height;
-  letter-spacing: @font-swatch3-letter-spacing;
-}
-
-h4
-{
-  font-family:@font-swatch4-font-family;
-  font-size:@font-swatch4-font-size;
-  font-weight:@font-swatch4-font-weight;
-  line-height:@font-swatch4-line-height;
-  color:@font-swatch4-color;
-  letter-spacing: @font-swatch4-letter-spacing;
-}
-
-p
-{
-  font-family:@font-swatch5-font-family;
-  font-size:@font-swatch5-font-size;
-  font-weight: @font-swatch5-font-weight;
-  line-height:@font-swatch5-line-height;
-  color:@font-swatch5-color;
-  letter-spacing: @font-swatch5-letter-spacing;
-}
-
 blockquote {
     margin: 30px 0;
     quotes:"\201C""\201D""\2018""\2019";
@@ -104,15 +55,6 @@ blockquote:before {
     line-height: .1em;
     margin-right: .1em;
     vertical-align: -.4em;
-}
-
-
-  blockquote p, ol, li, ul {
-  font-family:@font-swatch5-font-family;
-  font-size:@font-swatch5-font-size;
-  font-weight:@font-swatch5-font-weight;
-  line-height:@font-swatch5-line-height;
-  color:@font-swatch5-color;
 }
 
 .bk-content-text ul, .bk-content-text ol, .bk-content-text li {
@@ -184,12 +126,6 @@ header .nav-feature {
 }
 
 .widget.companyname a {
-  font-family:@font-swatch10-font-family;
-  font-weight: @font-swatch10-font-weight;
-  color:@font-swatch10-color;
-  line-height:@font-swatch10-line-height;
-  letter-spacing: @font-swatch10-letter-spacing;
-  font-size: @font-swatch10-font-size;
   padding: 10px 8px 8px;
 }
 
@@ -198,6 +134,13 @@ header .nav-feature {
 .widget.logo {
   width: 100%;
   text-align: center;
+}
+
+.widget {
+    &.logo, &.companyname {
+        display: inline-block;
+        vertical-align: middle;
+    }
 }
 
 
@@ -371,6 +314,12 @@ footer.bk-footer h4 {
   color: @font-swatch6-color-hover;
 }
 
+.extendednavigation li.selected {
+    a, .text {
+        color: @font-swatch6-color-hover;
+    }
+}
+
 /* EXTENDED NAVIGATION - INSIDE ZONE */
 
 .main .widget.extendednavigation {
@@ -462,42 +411,6 @@ footer.bk-footer h4 {
 {
   background-color: @font-swatch7-background-color-hover;
 
-}
-
-.nav-feature .widget.button button.btn.justifyleft
-{
-    text-align: left;
-}
-
-.nav-feature .widget.button button.btn.justifycenter
-{
-    text-align: center;
-}
-
-.nav-feature .widget.button button.btn.justifyright
-{
-    text-align: right;
-}
-
-.nav-feature .widget.button button.btn.justifyfull
-{
-    text-align: justify;
-}
-
-.nav-feature .widget.button button.btn.italic {
-    font-style: italic;
-}
-
-.nav-feature .widget.button button.btn.bold {
-    font-weight: bold;
-}
-
-.nav-feature .widget.button button span {
-    vertical-align: center;
-}
-
-.nav-feature .widget.button button i {
-    margin-right: 5px;
 }
 
 
@@ -662,45 +575,6 @@ footer.bk-footer h4 {
 {
   background-color: @font-swatch7-background-color-hover;
   cursor: pointer;
-}
-
-
-/* JUSTIFY */
-
-.widget.button button.btn.justifyleft
-{
-    text-align: left;
-}
-
-.widget.button button.btn.justifycenter
-{
-    text-align: center;
-}
-
-.widget.button button.btn.justifyright
-{
-    text-align: right;
-}
-
-.widget.button button.btn.justifyfull
-{
-    text-align: justify;
-}
-
-.widget.button button.btn.italic {
-    font-style: italic;
-}
-
-.widget.button button.btn.bold {
-    font-weight: bold;
-}
-
-.widget.button span {
-    vertical-align: center;
-}
-
-.widget.button i {
-    margin-right: 5px;
 }
 
 /* ===============================
@@ -1138,34 +1012,6 @@ hr.line.align-right {
     cursor: pointer;
 }
 
-.widget.contactform fieldset button.btn.justifyleft
-{
-    text-align: left;
-}
-
-.widget.contactform fieldset button.btn.justifycenter
-{
-    text-align: center;
-}
-
-.widget.contactform fieldset button.btn.justifyright
-{
-    text-align: right;
-}
-
-.widget.contactform fieldset button.btn.justifyfull
-{
-    text-align: justify;
-}
-
-.widget.contactform fieldset button.btn.italic {
-    font-style: italic;
-}
-
-.widget.contactform fieldset button.btn.bold {
-    font-weight: bold;
-}
-
 
 /* ===============================
    SIGNUPFORM WIDGET
@@ -1472,74 +1318,6 @@ hr.line.align-right {
     background-position: 10px;
     padding: 20px;
 
-}
-
-.svg .widget.socialicons span.bk-socialicons-linkedin a,
-.svg .widget.profile .bk-profile-socialicons span.bk-socialicons-linkedin a {
-    background-position: 10px;
-    padding: 20px;
-}
-
-.svg .widget.socialicons span.bk-socialicons-facebook a,
-.svg .widget.profile .bk-profile-socialicons span.bk-socialicons-facebook a {
-    background-image: image('/images/social/socialicons-facebook.svg');
-    background-position: 10px;
-    padding: 20px;
-}
-
-.svg .widget.socialicons span.bk-socialicons-rss a,
-.svg .widget.profile .bk-profile-socialicons span.bk-socialicons-rss a {
-    background-image: image('/images/social/socialicons-rss.svg');
-    background-position: 10px;
-    padding: 20px;
-}
-
-.svg .widget.socialicons span.bk-socialicons-googleplus a,
-.svg .widget.profile .bk-profile-socialicons span.bk-socialicons-googleplus a {
-     padding: 20px;
-}
-
-.svg .widget.socialicons span.bk-socialicons-youtube a,
-.svg .widget.profile .bk-profile-socialicons span.bk-socialicons-youtube a {
-    background-image: image('/images/social/socialicons-youtube.svg');
-    background-position: 10px;
-    padding: 20px;
-}
-
-/* PNG ICONS */
-
-.widget.socialicons span.bk-socialicons-twitter a,
-.widget.profile .bk-profile-socialicons span.bk-socialicons-twitter a {
-    background-image: image('/images/social/socialicons-twitter.png');
-    background-position: 20px;
-}
-
-.widget.socialicons span.bk-socialicons-linkedin a,
-.widget.profile .bk-profile-socialicons span.bk-socialicons-linkedin a {
-     padding: 15px 25px;
-}
-
-.widget.socialicons span.bk-socialicons-facebook a,
-.widget.profile .bk-profile-socialicons span.bk-socialicons-facebook a {
-    background-image: image('/images/social/socialicons-facebook.png');
-    background-position: 20px;
-}
-
-.widget.socialicons span.bk-socialicons-rss a,
-.widget.profile .bk-profile-socialicons span.bk-socialicons-rss a {
-    background-image: image('/images/social/socialicons-rss.png');
-    background-position: 20px;
-}
-
-.widget.socialicons span.bk-socialicons-googleplus a,
-.widget.profile .bk-profile-socialicons span.bk-socialicons-googleplus a {
-     padding: 15px 25px;
-}
-
-.widget.socialicons span.bk-socialicons-youtube a,
-.widget.profile .bk-profile-socialicons span.bk-socialicons-youtube a {
-    background-image: image('/images/social/socialicons-youtube.png');
-    background-position: 20px;
 }
 
 
