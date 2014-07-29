@@ -479,37 +479,6 @@ footer.bk-footer h4 {
 }
 
 
-.widget.clicktocall a.justifyleft
-{
-    text-align: left;
-}
-
-.widget.clicktocall a.justifycenter
-{
-    text-align: center;
-}
-
-.widget.clicktocall a.justifyright
-{
-    text-align: right;
-}
-
-.widget.clicktocall a.justifyfull
-{
-    text-align: justify;
-}
-
-.widget.clicktocall a.italic {
-    font-style: italic;
-}
-
-.widget.clicktocall a.bold {
-    font-weight: bold;
-}
-
-
-
-
 /* ===============================
    IMAGE WIDGET
    =============================== */
@@ -1103,11 +1072,10 @@ hr.line.align-right {
 }
 
 .widget.tweet a {
-  padding: 15px 25px 15px 38px;
+  padding: 15px 25px 15px 54px;
   margin: 0;
-  background-image: image('/images/twitter.png');
   background-repeat: no-repeat;
-  background-position: 13px 18px;
+  background-position: 20px 14px;
   margin: 2.2em auto;
   border: none;
   -webkit-border-radius: 5px;
@@ -1128,7 +1096,6 @@ hr.line.align-right {
   cursor: pointer;
   background-color: @font-swatch7-background-color-hover;
   background-repeat: no-repeat;
-  background-position: 13px 18px;
   margin: 2.2em auto;
 }
 
@@ -1142,7 +1109,7 @@ hr.line.align-right {
   margin: 0;
   background-image: image('/images/dropbox-icon.png');
   background-repeat: no-repeat;
-  background-position: 23px 12px;
+  background-position: 23px 16px;
   margin: 2.2em auto;
   border: none;
   -webkit-border-radius: 5px;
@@ -1166,6 +1133,10 @@ hr.line.align-right {
   background-position: 13px 18px;
  }
 
+ .widget.dropbox button:hover {
+    background-color: @font-swatch7-background-color-hover!important;
+ }
+
 /* ===============================
    PAYPAL BUTTON
    =============================== */
@@ -1176,7 +1147,7 @@ hr.line.align-right {
   margin: 0;
   background-image: image('/images/paypal.png');
   background-repeat: no-repeat;
-  background-position: 23px 12px;
+  background-position: 23px 16px;
   margin: 2.2em auto;
   border: none;
   -webkit-border-radius: 5px;
@@ -1234,6 +1205,7 @@ hr.line.align-right {
     background-image: none;
     margin-top: 0;
     text-align: left;
+    padding:0em 0 1.5em;
 }
 
 .blog-list-footer {
@@ -1250,7 +1222,7 @@ hr.line.align-right {
 .blogsearch {
     form {
         button {
-            padding: 10px;
+            padding: 8px 15px 4px;
             color: @font-swatch7-color;
             font-size: @font-swatch6-font-size;
             font-weight: @font-swatch6-font-weight;
@@ -1261,6 +1233,138 @@ hr.line.align-right {
     }
 }
 
+.blog-search-submit-button, .form-group.productlist-search button.btn {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 3px 0px #b93123;
+  -moz-box-shadow: 0px 3px 0px #b93123;
+  box-shadow: 0px 3px 0px #b93123;
+  padding: 8px 15px 4px;
+}
+
+.blog-search-submit-button:hover {
+  background-color: @font-swatch7-background-color-hover;
+}
+
+time {
+  color: @font-swatch5-color;
+}
+
+.blog-post-sharing button.btn {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 3px 0px #b93123;
+    -moz-box-shadow: 0px 3px 0px #b93123;
+    box-shadow: 0px 3px 0px #b93123;
+  &:hover {
+    background-color: @font-swatch7-background-color-hover;
+  }
+}
+
+/* ECOM*/
+
+.widget.ecomproduct .ecom-product .ecom-product-info .ecom-product-variation select {
+    -webkit-appearance: none;
+    -moz-appearance: window;
+    appearance: none;
+    outline: none !important;
+    -moz-outline-style: none;
+    border: 1px solid @color-swatch5, 25%;
+    position: relative;
+    background: transparent;
+    padding: 10px 23px 10px 10px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background-image: image('/images/arrow.png');
+    background-position: right 6% center;
+    background-repeat: no-repeat;
+    border: 0;
+    background-position-x: 98%;
+    background-position-y: 53%;
+    border:1px solid @color-swatch5;
+    border-radius:0;
+}
+
+.widget.ecomcheckout .delivery select {
+  -webkit-appearance: none;
+    -moz-appearance: window;
+    appearance: none;
+    outline: none !important;
+    -moz-outline-style: none;
+    border: 1px solid @color-swatch5, 25%;
+    position: relative;
+    background: transparent;
+    padding: 10px 23px 10px 10px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background-image: image('/images/arrow.png');
+    background-position: right 6% center;
+    background-repeat: no-repeat;
+    border: 0;
+    background-position-x: 99%;
+    background-position-y: 53%;
+    border:1px solid @color-swatch5;
+    border-radius:0;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: window;
+    appearance: none;
+    outline: none !important;
+    -moz-outline-style: none;
+    border: 1px solid @color-swatch5, 25%;
+    position: relative;
+    background: transparent;
+    padding: 10px 23px 10px 10px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background-image: image('/images/arrow.png');
+    background-position: right 6% center;
+    background-repeat: no-repeat;
+    border: 0;
+    background-position-x: 95%;
+    background-position-y: 53%;
+    border:1px solid @color-swatch5;
+    border-radius:0;
+}
+
+select::-ms-expand {
+   display: none;
+}
+.widget.ecomproduct .ecom-product .ecom-product-info .ecom-product-variation select,
+   select {
+   -moz-appearance: none;
+   text-indent: 0.01px
+   ;
+   text-overflow: '';
+}
+
+.widget.ecombasket .ecombasket-pull {
+    -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 3px 0px #b93123;
+  -moz-box-shadow: 0px 3px 0px #b93123;
+  box-shadow: 0px 3px 0px #b93123;
+}
+
+.btn, button.btn {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 3px 0px #b93123;
+  -moz-box-shadow: 0px 3px 0px #b93123;
+  box-shadow: 0px 3px 0px #b93123;
+  &:hover {
+    background-color: @font-swatch7-background-color-hover;
+  }
+}
 
 /* ==================================
    SOCIAL BAR WIDGET / SOCIAL PROFILE
@@ -1329,7 +1433,7 @@ hr.line.align-right {
    PROFILE WIDGET
    =============================== */
 
-.widget.profile span, .widget.profile a {
+.widget.profile span, .widget.profile a, .widget.profile p {
   display: block;
   font-size: bkscale(@font-swatch5-font-size,0.9);
   font-family: @font-swatch5-font-family;
@@ -1432,7 +1536,6 @@ footer .widget.profile span, footer .widget.profile a{
     margin-top: 6px;
     margin-bottom: 10px;
     padding: 0;
-    text-align: center;
 }
 
 .widget.profile fieldset input:focus {
@@ -1442,7 +1545,7 @@ footer .widget.profile span, footer .widget.profile a{
 
 .widget.profile fieldset button.btn {
     width: auto;
-    padding: 15px 25px;
+    padding: 10px 25px 6px;
     border: none;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
