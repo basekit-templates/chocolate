@@ -253,6 +253,10 @@ footer.bk-footer h4 {
   border-top-color:@font-swatch6-color;
 }
 
+.widget .extendednavigation ul li.folder:hover:after {
+  border-top-color:@font-swatch6-color-hover;
+}
+
 // Selected state
 .extendednavigation ul li.selected, .extendednavigation ul li:hover ul li.selected, .extendednavigation ul li.folder.selected ul li.selected, .extendednavigation ul li.folder.selected {
     a, .text {
@@ -1695,6 +1699,10 @@ footer .widget.profile span, footer .widget.profile a{
     overflow: visible;
   }
 
+  .widget .extendednavigation ul li.folder:after {
+    top: 17px;
+  }
+
   .widget .extendednavigation ul.align-right li.folder:after {
     left: 5px;
     right: inherit;
@@ -1744,6 +1752,19 @@ footer .widget.profile span, footer .widget.profile a{
       margin: 0;
   }
 
+  .widget.extendednavigation ul li.folder ul li .text {
+      padding: 8px;
+      margin: 0;
+  }
+
+  .widget.extendednavigation ul li.folder ul li:first-child .text {
+      padding-top: 16px;
+  }
+
+  .widget.extendednavigation ul li.folder ul li:last-child .text {
+      padding-bottom: 16px;
+  }
+
   .widget.extendednavigation ul li > ul {
       display: none!important;
   }
@@ -1769,10 +1790,6 @@ footer .widget.profile span, footer .widget.profile a{
 
   .widget.extendednavigation ul li:hover > ul li:first-child {
     border-top: none;
-  }
-
-  .widget.extendednavigation li:hover > ul > li > a {
-    padding-left: 10px;
   }
 
   /* OTHER */
