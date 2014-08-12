@@ -110,8 +110,6 @@ header .nav-feature {
   width: 100%;
   background-color: @color-swatch7;
   background-image: image('/images/worn_dots.png');
-
-
 }
 
 .companyheaderwrap {
@@ -167,55 +165,6 @@ footer.bk-footer h4 {
     padding-bottom: 30px;
 }
 
-
-/* ===============================
-   STANDARD NAVIGATION
-   =============================== */
-
-.widget.navigation {
-}
-
-.widget.navigation ul {
-  padding: 0;
-  margin: 20px 0 0;
-}
-
-.widget.navigation ul.align-center li
-{
-  text-align: center;
-}
-
-.widget.navigation ul.align-left li
-{
-  text-align: left;
-}
-
-.widget.navigation ul.align-right li
-{
-  text-align: right;
-}
-
-.widget.navigation ul li {
-  float: left;
-  display: block;
-  padding-right: 40px;
-}
-
-.widget.navigation ul li a {
-  display: block;
-  font-family:@font-swatch6-font-family;
-  font-size:@font-swatch6-font-size;
-  font-weight: @font-swatch6-font-weight;
-  color: @font-swatch6-color;
-  line-height:@font-swatch6-line-height;
-  letter-spacing: @font-swatch6-letter-spacing;
-}
-
-.widget.navigation ul li a:hover {
-  text-decoration: none;
-  color: @color-swatch3;
-}
-
 /* ===============================
    EXTENDED NAVIGATION
    =============================== */
@@ -223,6 +172,7 @@ footer.bk-footer h4 {
 .widget.extendednavigation {
     text-align: center;
     position: relative;
+    margin: 0 -23px;
 }
 
 .widget.extendednavigation ul {
@@ -230,29 +180,9 @@ footer.bk-footer h4 {
   margin: 0;
 }
 
-.widget.extendednavigation a.pull {
-  top:-77px;
-}
-
-.widget.extendednavigation ul.align-center li
-{
-  text-align: center;
-}
-
-.widget.extendednavigation ul.align-left li
-{
-  text-align: left;
-}
-
-.widget.extendednavigation ul.align-right li
-{
-  text-align: right;
-}
-
 .widget.extendednavigation ul li {
   display: inline-block;
 }
-
 
 .widget.extendednavigation ul li a, .widget.extendednavigation ul li.folder .text {
   display: block;
@@ -274,7 +204,6 @@ footer.bk-footer h4 {
    color: @font-swatch6-color-hover;
 }
 
-
 .widget.extendednavigation ul li a:hover, .widget.extendednavigation ul li.folder:hover {
   text-decoration: none;
   color: @font-swatch6-color-hover;
@@ -284,7 +213,6 @@ footer.bk-footer h4 {
   height: 100%;
   cursor: pointer;
 }
-
 
 .widget.extendednavigation li > ul {
   display: none;
@@ -353,15 +281,10 @@ footer.bk-footer h4 {
    FEATURE: Image widget + Button
    =============================== */
 
-
-   .feature-img-widget {
-    float: left;
-    width: 100%;
-   }
-
-
-
-
+.feature-img-widget {
+  float: left;
+  width: 100%;
+}
 
 .nav-feature .widget.image .image-title {
   font-family:@font-swatch8-font-family;
@@ -387,7 +310,6 @@ footer.bk-footer h4 {
 .nav-feature .widget.image a:hover {
   text-decoration: none;
 }
-
 
 .nav-feature .feature-button {
   float: left;
@@ -420,7 +342,6 @@ footer.bk-footer h4 {
   background-color: @font-swatch7-background-color-hover;
 
 }
-
 
 /* ===============================
    FEATURE LAYOUTS
@@ -482,7 +403,6 @@ footer.bk-footer h4 {
   cursor: default;
 }
 
-
 /* ===============================
    IMAGE WIDGET
    =============================== */
@@ -492,10 +412,6 @@ footer.bk-footer h4 {
     max-width: 100%;
     border: 0;
     border-width: 0;
-}
-
-.widget.image {
-
 }
 
 .widget.image span.image-title {
@@ -558,15 +474,12 @@ footer.bk-footer h4 {
    CONTENT CSS
    =============================== */
 
-
-.widget.content
-{
+.widget.content {
     padding: 0;
     overflow: hidden;
 }
 
-.widget.content span.expand
-{
+.widget.content span.expand {
     font-family: @font-swatch3-font-family;
     background-color: @color-swatch3;
     color: @font-swatch7-color;
@@ -581,8 +494,7 @@ footer.bk-footer h4 {
 }
 
 .widget.content span.expand:hover,
-.widget.content span.expand:focus
-{
+.widget.content span.expand:focus {
     cursor: pointer;
     background-color: darken(@color-swatch3,5%);
 }
@@ -711,45 +623,9 @@ hr.line.align-right {
    margin: 20px 0px 20px auto;
 }
 
-
-
-/* ===============================
-   REDIRECT WIDGET
-   =============================== */
-
-.widget.redirecttodesktop {
-    padding: 8px 0;
-}
-
-.widget.redirecttodesktop a {
-    padding-right: 30px;
-    padding-top: 2px;
-    background-image: image('/images/desktop.png');
-    background-repeat: no-repeat;
-    background-position: right center;
-    font-size: 12px;
-    text-shadow: 0 1px 0 rgba(255,255,255,.5);
-    text-decoration: none;
-    cursor: pointer;
-    color: @font-swatch5-color;
-    font-family: @font-swatch5-font-family;
-
-}
-
-.widget.redirecttodesktop a:hover, .desktop a:active {
-    background-image: image('/images/desktop.png');
-    background-repeat: no-repeat;
-    background-position: right center;
-    cursor: pointer;
-    text-decoration: underline;
-}
-
 /* ===============================
    TWITTER FULL
    =============================== */
-
-.widget.twitter {
-}
 
 .widget.twitter a {
    font-family: @font-swatch5-font-family;
@@ -835,7 +711,6 @@ hr.line.align-right {
 .widget.twitter ul li span {
     line-height: 50px;
 }
-
 
 /* ===============================
    CONTACT FORM WIDGET
@@ -1006,8 +881,6 @@ hr.line.align-right {
     cursor: pointer;
 }
 
-
-
 /* ===============================
    TWEET THIS WIDGET
    =============================== */
@@ -1048,7 +921,6 @@ hr.line.align-right {
 /* ===============================
    DROPBOX BUTTON
    =============================== */
-
 
 .widget.dropbox .b-wrap .btn {
   padding: 15px 25px 15px 59px;
@@ -1529,7 +1401,6 @@ footer .widget.profile .bk-profile-socialicons span a:hover {
   text-decoration: none;
 }
 
-
 /* FOOTER PROFILE - TWITTER */
 
 .widget.profile .twitter a {
@@ -1664,7 +1535,6 @@ footer .widget.profile span, footer .widget.profile a{
   margin: 10px 0px;
 }
 
-
 /* ===============================
    SLIDESHOW WIDGET
    =============================== */
@@ -1789,7 +1659,6 @@ footer .widget.profile span, footer .widget.profile a{
     }
 }
 
-
 /* ===============================
    IPAD WIDTH
    =============================== */
@@ -1831,6 +1700,7 @@ footer .widget.profile span, footer .widget.profile a{
     float: left;
     z-index: 9999;
     top:-50px;
+    margin: 0 auto;
   }
 
   .widget.extendednavigation .bk-overlay {
@@ -1846,6 +1716,20 @@ footer .widget.profile span, footer .widget.profile a{
 
      /* NAV */
 
+
+  .widget .extendednavigation ul.align-right li.folder:after {
+    left: 5px;
+    right: inherit;
+  }
+  .widget .extendednavigation a.pull {
+    top:-25px;
+    margin: 0px auto;
+    display: table;
+    width: 52%;
+  }
+  .widget .extendednavigation a.pull:after {
+    left:0;
+  }
   
  .widget .extendednavigation ul {
     width: 100%;
@@ -1864,7 +1748,6 @@ footer .widget.profile span, footer .widget.profile a{
     border-bottom: none;
   }
 
-
   .widget.extendednavigation ul li a, .widget.extendednavigation ul li.folder .text, .widget.extendednavigation ul li.folder .text:hover, .widget.extendednavigation ul li:hover > ul > li > a .text {
     color: @font-swatch6-color-hover;
   }
@@ -1873,12 +1756,10 @@ footer .widget.profile span, footer .widget.profile a{
      color: @font-swatch6-color;
   }
 
-
   .widget.extendednavigation ul li a:hover, .widget.extendednavigation ul li.folder:hover {
     text-decoration: none;
     color: @font-swatch6-color;
   }
-
 
   .widget.extendednavigation ul li:hover, .widget.extendednavigation ul li.folder:hover {
        text-decoration: none;
@@ -1894,8 +1775,6 @@ footer .widget.profile span, footer .widget.profile a{
       margin: 0;
   }
 
-
-
   .widget.extendednavigation ul li > ul {
       display: none!important;
   }
@@ -1910,8 +1789,6 @@ footer .widget.profile span, footer .widget.profile a{
   .widget.extendednavigation ul li:hover > ul > li {
      border-bottom: 2px solid @color-swatch1;
   }
-
-
 
   .widget.extendednavigation ul li.folder {
     border-radius: 0;
@@ -1961,34 +1838,6 @@ footer .widget.profile span, footer .widget.profile a{
   .nav-feature .widget.button button {
     font-size:bkscale(@font-swatch7-font-size,0.9);
     line-height:bkscale(@font-swatch7-line-height,0.9);
-  }
-
-
-
-   /* GALLERY */
-
-  .widget.gallery li span.inner .title, .widget.gallery li span.inner .description {
-    font-size:bkscale(@font-swatch5-font-size,0.9);
-    line-height:bkscale(@font-swatch5-line-height,0.9);
-  }
-
-  .widget.gallery ul.gallery-widget li
-  {
-      width: 50%;
-      padding-bottom: 50%;
-  }
-  .widget .extendednavigation ul.align-right li.folder:after {
-    left: 5px;
-    right: inherit;
-  }
-  .widget .extendednavigation a.pull {
-    top:-25px;
-    margin: 0px auto;
-    display: table;
-    width: 52%;
-  }
-  .widget .extendednavigation a.pull:after {
-    left:0;
   }
 
 }
@@ -2118,14 +1967,6 @@ footer .widget.profile span, footer .widget.profile a{
       width: 100%;
       font-size: 14px;
   }
-
-   
-
-     /* GALLERY */
-
-    .widget.gallery li span.inner .title, .widget.gallery li span.inner .description {
-      max-height: 150px;
-    }
 
   /* ===============================
    CLICK TO CALL - ONLY SHOWS IN IPHONE
