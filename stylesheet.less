@@ -1670,7 +1670,7 @@ footer .widget.profile span, footer .widget.profile a{
   }
 
   header .nav-feature {
-    padding-top: 36px;
+    padding-top: 45px;
   }
 
   .widget.companyheader {
@@ -1687,11 +1687,7 @@ footer .widget.profile span, footer .widget.profile a{
     font-size:bkscale(@font-swatch1-font-size, 0.4)
   }
 
-  header .nav-feature {
-    margin-top:50px;
-  }
-
-  /* NAV */
+  /* EXTENDED NAV */
 
   .widget.extendednavigation {
     width: 100%;
@@ -1699,7 +1695,6 @@ footer .widget.profile span, footer .widget.profile a{
     display: block;
     float: left;
     z-index: 9999;
-    top:-50px;
     margin: 0 auto;
   }
 
@@ -1714,34 +1709,34 @@ footer .widget.profile span, footer .widget.profile a{
     overflow: visible;
   }
 
-     /* NAV */
-
-
   .widget .extendednavigation ul.align-right li.folder:after {
     left: 5px;
     right: inherit;
   }
+
   .widget .extendednavigation a.pull {
-    top:-25px;
     margin: 0px auto;
-    display: table;
-    width: 52%;
+    width: 100%;
   }
   .widget .extendednavigation a.pull:after {
-    left:0;
+    left: 50%;
+    margin-left: -13px;
+    top: 14px;
   }
   
  .widget .extendednavigation ul {
     width: 100%;
     display: none;
     margin: 0;
-    border-top: 2px solid @color-swatch1;
-    padding-top:20px;
   }
 
   .widget.extendednavigation ul li {
     border-bottom: 2px solid @color-swatch1;
-    padding: 16px 0;
+    padding: 0;
+  }
+
+  .widget.extendednavigation ul li:first-child {
+    border-top: 2px solid @color-swatch1;
   }
 
    .widget.extendednavigation ul li:last-child {
