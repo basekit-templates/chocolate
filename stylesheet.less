@@ -226,6 +226,9 @@ footer.bk-footer h4 {
   background-image: image('/images/worn_dots.png');
   z-index: 500;
   margin-top: 0;
+    -webkit-border-radius: 0 0 10px 10px;
+  -moz-border-radius: 0 0 10px 10px;
+  border-radius: 0 0 10px 10px;
 }
 
 .widget.extendednavigation ul li:hover > ul > li {
@@ -250,6 +253,15 @@ footer.bk-footer h4 {
   border-top-color:@font-swatch6-color;
 }
 
+// Selected state
+.extendednavigation ul li.selected, .extendednavigation ul li:hover ul li.selected, .extendednavigation ul li.folder.selected ul li.selected, .extendednavigation ul li.folder.selected {
+    a, .text {
+        color: @font-swatch6-color-hover;
+    }
+}
+.extendednavigation ul li.folder.selected ul li .text {
+    color: @font-swatch6-color;
+}
 
 /* ===============================
    FEATURE: Image widget + Button
@@ -1717,18 +1729,6 @@ footer .widget.profile span, footer .widget.profile a{
     border-bottom: none;
   }
 
-  .widget.extendednavigation ul li a, .widget.extendednavigation ul li.folder .text, .widget.extendednavigation ul li.folder .text:hover, .widget.extendednavigation ul li:hover > ul > li > a .text {
-    color: @font-swatch6-color-hover;
-  }
-
-  .widget.extendednavigation ul li.folder .text:hover {
-     color: @font-swatch6-color;
-  }
-
-  .widget.extendednavigation ul li a:hover, .widget.extendednavigation ul li.folder:hover {
-    text-decoration: none;
-    color: @font-swatch6-color;
-  }
 
   .widget.extendednavigation ul li:hover, .widget.extendednavigation ul li.folder:hover {
        text-decoration: none;
@@ -1753,6 +1753,10 @@ footer .widget.profile span, footer .widget.profile a{
       width: 100%;
       padding: 0;
       background-color: lighten(@font-swatch6-background-color,80%);
+      position: relative;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
   }
 
   .widget.extendednavigation ul li:hover > ul > li {
@@ -1765,9 +1769,6 @@ footer .widget.profile span, footer .widget.profile a{
 
   .widget.extendednavigation ul li:hover > ul li:first-child {
     border-top: none;
-  }
-
-    .widget.extendednavigation ul li:hover > ul li:last-child {
   }
 
   .widget.extendednavigation li:hover > ul > li > a {
