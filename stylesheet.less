@@ -1085,6 +1085,17 @@ time {
 
 /* ECOM*/
 
+.widget.ecomproduct {
+  padding: 4em 0;
+  @media @tablet {
+    padding: 0;
+  }
+}
+
+.ecom-product-preview-image-wrap {
+   background-image: none !important;
+}
+
 .widget.ecomproduct .ecom-product .ecom-product-info .ecom-product-variation select {
     -webkit-appearance: none;
     -moz-appearance: window;
@@ -1163,6 +1174,10 @@ select::-ms-expand {
    text-indent: 0.01px
    ;
    text-overflow: '';
+}
+
+.ecom-product-long-description {
+  margin-top: 2em;
 }
 
 .widget.ecombasket .ecombasket-pull {
