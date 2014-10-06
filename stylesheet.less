@@ -43,8 +43,7 @@ blockquote {
     color:@color-swatch5;
     background-color: @color-swatch7;
     background-image: image('/images/worn_dots.png');
-    padding: 30px;
-    margin: 30px;
+    padding: 30px 40px;
 }
 
 blockquote:before {
@@ -55,6 +54,8 @@ blockquote:before {
     line-height: .1em;
     margin-right: .1em;
     vertical-align: -.4em;
+    left: 15px;
+    top: 30px;
 }
 
 .bk-content-text ul, .bk-content-text ol, .bk-content-text li {
@@ -1028,15 +1029,37 @@ hr.line.align-right {
 
 /* BLOG SEARCH */
 .blogsearch {
+    display: inline-block;
+    margin-bottom: 20px;
+    background-color: @color-swatch7;
+    background-image: image('/images/worn_dots.png');
+    padding: 1em;
+    @media @mobile {
+            width: 100%;
+          }
     form {
+      label {
+        display: block;
+      }
         button {
-            padding: 8px 15px 4px;
             color: @font-swatch7-color;
             font-size: @font-swatch6-font-size;
             font-weight: @font-swatch6-font-weight;
             line-height: @font-swatch6-line-height;
             background-color: @font-swatch7-background-color;
             border: none;
+            height: 44px;
+        }
+        input {
+          height: 45px;
+          margin-right: 5px;
+          border: 1px solid darken(@color-swatch1,7%);
+          background: @color-swatch1;
+          @media @mobile {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 10px;
+          }
         }
     }
 }
@@ -1084,6 +1107,10 @@ time {
 }
 
 /* MENU*/
+
+.menu .menu-subsection {
+  padding: 0;
+}
 
 .dietary-icon {
   padding:5px;
