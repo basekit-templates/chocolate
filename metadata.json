@@ -1,7 +1,7 @@
 {
 	"name":"Chocolate",
 	"thumbnail":"chocolate.png",
-	"screenshot":"chocolate.png",
+	"screenshot":"chocolate-screenshot.jpg",
 	"templateType":"standard",
     "pageTypes":["home"],
     "tags": {
