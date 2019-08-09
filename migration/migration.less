@@ -19,7 +19,8 @@
   
 // Main content spacing (replace with corresponding template class)
 .main {
-  padding: 0;
+  padding: 20px 0;
+  
 }
 
 // Widget overflow to allow 10S overlays to display correctly
@@ -37,9 +38,9 @@
 // Replace with corresponding template values
 @container-width: 960px;
 
-@spacing__first--desktop: 40px;
-@spacing__first--tablet:  30px;
-@spacing__first--mobile:  20px;
+@spacing__first--desktop: 0px;
+@spacing__first--tablet:  0px;
+@spacing__first--mobile:  10px;
 
 @spacing--other: 30px;
 
@@ -70,6 +71,7 @@
 }
 
 
+
 // Move spacing to last widget in the main zone (not sections)
 #page-zones__main > .widget:not(.row):last-child {
   margin-bottom: @spacing__first--desktop;
@@ -82,6 +84,9 @@
   }
 }
 
+#page-zones__main #page-zones__main-widgets__productslist > .widget:not(.row):last-child {
+  margin-bottom: 0;
+}
 
 // Add spacing to the top of a widget when it follows a section
 #page-zones__main > .row + .widget:not(.row) {
@@ -105,5 +110,9 @@
   }
 }
 
+
+.content.widget ul {
+    list-style:none;
+}
 
 } // End of #migrated-site
